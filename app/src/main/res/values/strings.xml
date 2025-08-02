@@ -1,3 +1,5 @@
 <resources>
+    <!-- Accessibility Strings -->
+    <string name="settings_button_content_description">Settings, opens application settings</string>
     <string name="app_name">AndroidAccessibility</string>
 </resources>
