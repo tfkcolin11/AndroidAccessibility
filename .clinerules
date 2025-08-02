@@ -1,0 +1,17 @@
+# Accessibility rules
+
+## Enforce Content Description
+
+- When generating an `Image`, `Icon`, or `IconButton` composable, you MUST include a non-empty `contentDescription` string parameter unless the image is specified as purely decorative. For decorative images, the `contentDescription` MUST be set to `null`.
+
+## Enforce Minimum Touch Target
+
+- For any composable that has a `Modifier.clickable` or `Modifier.toggleable`, you MUST ensure the final size of the element is at least 48dp by 48dp. If the element is smaller, apply padding to meet this minimum requirement.
+
+## Suggest Semantic Headings
+
+- If a `Text` composable is styled with a large `fontSize` (e.g., `20.sp` or greater) and a bold `fontWeight`, you SHOULD suggest adding `Modifier.semantics { heading() }` to it to improve navigational structure for screen reader users.
+
+## Promote Toggleable Grouping
+
+- When a `Switch`, `Checkbox`, or `RadioButton` is accompanied by a `Text` label, you SHOULD group them in a `Row` and apply a `Modifier.toggleable` or `selectable` to the `Row` itself. This creates a single, unified control.
