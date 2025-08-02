@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AndroidAccessibility</string>
+    <!-- Login screen strings -->
+    <string name="company_logo_desc">Company Logo</string>
+    <string name="login_title">Login</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="sign_in_button">Sign In</string>
 </resources>
