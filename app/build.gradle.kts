@@ -56,4 +56,10 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // Add these for Compose UI Testing
+    androidTestImplementation(platform(libs.androidx.compose.bom.v20240500))
+    androidTestImplementation(libs.ui.test.junit4.accessibility)
+
+    // Needed for debugging your tests
+    debugImplementation(libs.ui.test.manifest)
 }
